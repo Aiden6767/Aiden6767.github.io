@@ -4,3 +4,13 @@ table, td, th {
     padding: 15px;
     margin: 15px;
 }
+
+th { background: rgb(255, 0, 0);}
+.rheader { background: rgba(0, 217, 255, 0.767);}
+
+body {
+    background: linear-gradient(#d8caca, #19cbeb);
+    background-size: 100% 350%;
+}
+body { background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,91,212,1) 0%, rgba(0,212,255,1) 100%);} 
