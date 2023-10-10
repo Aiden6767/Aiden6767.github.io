@@ -4,9 +4,8 @@ table, td, th {
     padding: 15px;
     margin: 15px;
 }
-
 th { background: rgb(255, 0, 0);}
-.rheader { background: rgba(0, 217, 255, 0.767);}
+rheader { background: rgba(0, 217, 255, 0.767);}
 
 body {
     background: linear-gradient(#d8caca, #19cbeb);
