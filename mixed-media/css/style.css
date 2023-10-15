@@ -12,8 +12,8 @@ body {
     background-size: 100% 350%;
 }
 
-body { background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(100,100,100,1) 42%, rgba(204,204,204,1) 100%, rgba(255,255,255,1) 100%); }
+body { background: rgb(100,100,100);
+    background: linear-gradient(90deg, rgba(100,100,100,1) 58%, rgba(0,0,0,1) 100%, rgba(204,204,204,1) 100%, rgba(255,255,255,1) 100%);}
 
 
 video {length: 100px; width: 250px;} 
