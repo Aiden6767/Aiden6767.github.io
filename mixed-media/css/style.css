@@ -16,5 +16,5 @@ body {
 body { background: rgb(204,204,204);
     background: linear-gradient(90deg, rgba(204,204,204,1) 28%, rgba(100,100,100,1) 71%, rgba(0,0,0,1) 97%); }
 
-table {width: 250%;}
+table {width: 100%;}
 body,table  {text-align:center;} 
