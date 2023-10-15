@@ -3,7 +3,7 @@ table, td, th {
     border-collapse: collapse;
     padding: 15px;
     margin: 15px;
-    center
+    text-align: center;
 }
 th { background: rgb(174, 0, 255);}
 rheader { background: rgba(0, 255, 234, 0.767);}
