@@ -16,4 +16,4 @@ body { background: rgb(204,204,204);
 
 body,table  {text-align:center;} 
 
-video {size:25%;}
+body,table {size: 150%;}
