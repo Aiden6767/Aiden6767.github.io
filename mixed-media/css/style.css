@@ -9,9 +9,7 @@ th { background: rgb(174, 0, 255);}
 rheader { background: rgba(0, 255, 234, 0.767);}
 
 body {
-    background: linear-gradient(#e4dddd, #19cbeb);
-    background-size: 100% 350%;
-}
+background: linear-gradient(#e4dddd, #19cbeb);}
 
 body { background: rgb(204,204,204);
     background: linear-gradient(90deg, rgba(204,204,204,1) 28%, rgba(100,100,100,1) 71%, rgba(0,0,0,1) 97%); }
