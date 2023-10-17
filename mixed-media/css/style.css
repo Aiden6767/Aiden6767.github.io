@@ -14,7 +14,6 @@ background: linear-gradient(#e4dddd, #19cbeb);}
 body { background: rgb(204,204,204);
     background: linear-gradient(90deg, rgba(204,204,204,1) 28%, rgba(100,100,100,1) 71%, rgba(0,0,0,1) 97%); }
 
-body,table  {text-align:center;} 
-
 thead,tbody {size: 150%;}
 table {text-align: center;}
+
