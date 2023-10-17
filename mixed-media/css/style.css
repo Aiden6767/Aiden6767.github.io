@@ -17,3 +17,4 @@ body { background: rgb(204,204,204);
 body,table  {text-align:center;} 
 
 thead,tbody {size: 150%;}
+table {text-align: center;}
