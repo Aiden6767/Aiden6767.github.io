@@ -17,3 +17,5 @@ body { background: rgb(204,204,204);
 thead,tbody {size: 150%;}
 table {text-align: center;}
 
+body { font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
