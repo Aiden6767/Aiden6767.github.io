@@ -1,1 +1,42 @@
-background { color: #edf0f5;}
+body { background-color: #edf0f5;}
+label  {
+    font-size: 12px;
+    color:rgb(18, 96, 212);
+}
+
+body {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(235, 231, 231);
+    border-color: black;
+    border-radius:20%;
+    border-width: 30%;
+    display: black;
+
+}
+
+body {
+    font-size: 18px;
+    font-family: "Freight Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+button {
+            color: white;
+            background: rgb(5, 185, 56);
+            font-size: 24px;
+            padding: 20px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            text-align: center;
+            width: 40%;
+            height:10%;
+
+}
+h2 {
+    font-size: 20px;
+}
+p {font-size: 12px;}
+
+h1,h2,h3 {Text-align: left;}
