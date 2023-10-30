@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudoclasses</title>
+    <style>
+        /*change the highlight color*/
+        *::selection {background: pink;}
+        *::-moz-selection {background: pink;}
+
+        a:link {
+            color: rgb(238, 14, 208);
+            text-decoration: none;
+            padding: 10px; 
+        
+        }
+        a:hover {
+            color:blue;
+            background:gray;
+            text-decoration:underline;
+        }
+
+        a:visited { color:black;}
+        a:active {color:rgb(0, 238, 255);}
+
+        input {
+            /*top | right | bottom | left |*/
+            padding: 6px 12px 6px 12px;
+            border: 2px solid purple;
+            color: blue;
+        }
+        input [type=text] {color:purple;}
+        input [type=text]:focus {
+            color: blueviolet;
+            border: 5px solid plum;
+        }
+        input[type=submit]:hover {background: rgb(0, 183, 255);}
+        input[type=submit]:active {background:rgb(132, 0, 255);}
+
+        img {border: 3px solid transparent;}
+        img:hover {border: 3px solid rgb(212, 0, 255);}
+    </style>
+</head>
+<br>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    </br></br>
+
+    <input type="text" placeholder="some text"/>
+    <input type="submit" value="submit"/>
+    </br></br>
+
+    <img src="https://picsum.photos/200" alt="placeholder 1">
+    <img src="https://picsum.photos/id/1/200" alt="placeholder 2">
+    <img src="https://picsum.photos/id/10/200" alt="placeholder 3">
+</body>
+</html>
