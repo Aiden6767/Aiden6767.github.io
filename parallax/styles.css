@@ -14,9 +14,9 @@
     justify-content: center;
 }
 
-.static {background: red;}
-.bg1::after { background: url("https://picsum.photos/900/700"); }
-.bg2::after { background: url("https://picsum.photos/800/600"); }
+.static {background: rgb(255, 0, 242);}
+.bg1::after { background: url("purple22.jpg"); }
+.bg2::after { background: url("purple33.jpg"); }
 
 .parallax::after {
     content: " ";
