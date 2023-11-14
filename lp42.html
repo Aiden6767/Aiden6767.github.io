@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP 4-2</title>
+</head>
+<>
+    <label for="weight">Weight</label>
+    <input type="weight" id="weight" name="weight" min="0"> <br/><br/>
+
+    <label for="length">Length</label>
+    <input type="length" id="length" name="length" min="0"> <br/><br/>
+    
+    <label for="width">Width</label>
+    <input type="width" id="width" name="width" min="0"> <br/><br/>
+
+    <label for="height">Height</label>
+    <input type="height" id="height" name="height" min="0"> <br/><br/>
+
+    <button onclick="calc()">Calculate</button>
+    <p id="out"></p>
+    <script>
+        function calc() {
+            var weight = (Number.getElementById("weight").value);
+            var length = (Number.getElementById("length").value);
+            var height = (Number.getElementById("height").value);
+            var width = (Number.getElementById("width").value);
+            var p = document.getElementById("out");
+            
+            if (weight > 27 && height > 0.1) {
+
+            } else if (weight > 27 && width > 0.1) {
+
+            } else if (weight > 27 && length > 0.1) {
+
+            } else {
+                p.innerHTML = "package is okay.";
+            }
+            
+        }
+    </script>
+</body>
+</html>
