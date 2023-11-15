@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP 4-3</title>
+</head>
+<body>
+    <label for="eggs">Enter number of eggs purchased:</label>
+    <input type="number" id="eggs" name="eggs" min="0">
+    <button onclick="calculate()">Calculate</button>
+    <p id="output"></p>
+    <script>
+        function calculate() {
+            var eggs = Number(document.getElementById("eggs").value);
+            var dozens = Math.floor(eggs / 12);
+            var remainder = eggs % 12;
+            var price = 0.0;
+            var total = 0.0;
+            var out = document.getElementById("output");
+
+             if (dozens > 0 && dozens <= 3) {
+                price = 0.50;
+            }
+            if (dozens > 4 && dozens <= 5) {
+                price = 0.45;
+            }
+            if (dozens > 6 && dozens <= 10) {
+                price = 0.40;
+            }
+            if (dozens > 11 ) {
+                price = 0.35;
+            }
+                total = price * dozens
+                out.innerHTML = "Price per dozen is $" + price + "<br/>"
+                out.innerHTML = "Total cost is $" +total.toFixed(3) (eggs &&   1/12 )
+        }
+    </script>
+</body>
+</html>
