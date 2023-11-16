@@ -31,9 +31,9 @@
             if (dozens > 11 ) {
                 price = 0.35;
             }
-                total = price * dozens
+                total = (price * dozens) + (remainder * (1/12 * price))
                 out.innerHTML = "Price per dozen is $" + price + "<br/>"
-                out.innerHTML = "Total cost is $" +total.toFixed(3) (eggs &&   1/12 )
+                out.innerHTML = "Total cost is $" +total.toFixed(3)
         }
     </script>
 </body>
