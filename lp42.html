@@ -6,31 +6,42 @@
     <title>LP 4-2</title>
 </head>
 <>
-    <label for="weight">Enter package details:</label>
-    <input type="weight" id="weight" name="weight" min="0">
+    <label for="weight">Enter Weight:</label>
+    <input type="weight" id="weight" name="weight" min="0" <br/><br/>
+
+    <label for="length">Enter Length:</label>
+    <input type="weight" id="weight" name="weight" min="0" <br/><br/>
+
+    <label for="height:">Enter Height:</label>
+    <input type="weight" id="weight" name="weight" min="0" <br/><br/>
+
+    <label for="width ">Enter Width:</label>
+    <input type="weight" id="weight" name="weight" min="0" <br/><br/>
 
     <button onclick="calculate()">Calculate</button>
     <p id="out"></p>
     <script>
         function calc() {
-            var weight = (Number.getElementById("weight").value);
-            var length = (Number.getElementById("length").value);
-            var height = (Number.getElementById("height").value);
-            var width = (Number.getElementById("width").value);
+           
+            var weight = '(weight > 27kg)'
+            var length = '(Length > 0.1 Cubic Meter)'
+            var height = '(Height > 0.1 Cubic Meter)'
+            var width =  '(Width > 0.1 Cubic Meter)'
             var p = document.getElementById("out");
 
-            if (weight > 27 && height > 0.1) {
+            if (weight > 27 ) {
 
-            } else if (weight > 27 && width > 0.1) {
+            } else if (length > 0.1) {
 
-            } else if (weight > 27 && length > 0.1) {
+            } else if (height > 0.1) {
 
-            } else {
-            p.innerHTML = "package is okay.";
-            p.innerHTML += "weight: " + weight + "<br/>";
-            p.innerHTML / "length: " + length + "<br/>";
-            p.innerHTML += "width: " + width + "<br/>";
-            p.innerHTML += "height: " + height + "<br/>";
+            } else if (width > 0.1) {
+
+            } else  {
+            out.innerHTML = "Weight < 27 == Package is Too Heavy" + Package + "<br/>";
+            out.innerHTML = "Length < 0.1 == Package is Too Large" + Package + "<br/>";
+            out.innerHTML = "Width < 0.1 == Package is Too Large" + Package + "<br/>";
+            out.innerHTML = "Height < 0.1 == Package is Too Heavy" + Package + "<br/>";
             }
 
         }
