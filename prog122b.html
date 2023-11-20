@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog122b</title>
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        var msg = "Hours &emsp; Pay &emsp; <br/>"
+        var lcv = 1; //loop control variable
+        while (lcv <= 40) {
+            msg += lcv + "&emsp;" + (lcv**2) + "&emsp;" + Math.sqrt(lcv) + "<br/>";
+            lcv++;
+        }
+        document.getElementById("out").innerHTML = msg;
+    </script>
+</body>
+</html>
