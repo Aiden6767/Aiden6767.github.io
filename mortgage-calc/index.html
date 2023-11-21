@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mortgage Balance Calculator</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="js/script.js" rel="stylesheet">
 </head>
 <body>
     <label for="principal">Principal:</label>
     <input type="text" min="0">
     <br/><br/>
+
     <label for="intrate">Interest Rate as %(e.g. 7.9):</label>
     <input type="text" min="0">
     <br/><br/>
+
     <label for="noy">Number of Years:</label>
     <input type="text" min="0">
     <br/><br/>
+
     <label for="monpay">Monthly Payment:</label>
     <input type="text" min="0">
+    <br/><br/>
+
+    <button onclick="calculate()">Calculate</button>
+    <button onclick="reset()" id="reset">Reset</button>
 
 </body>
 </html>

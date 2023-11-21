@@ -1,0 +1,1 @@
+var reset = document.getElementById(reset).value = reset;
