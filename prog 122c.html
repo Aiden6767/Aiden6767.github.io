@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog122c</title>
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        var output = "";
+        // var col1 = 2; while (col1 <= 10) {...; col1 += 2;}
+        for (var col1 = 2; col1 <= 10; col1 += 2) {
+            var col2 = col1 + 1;
+            var col3 = col1 * 2;
+            var col4 = col1**2;
+            output += col1 + "&emsp;" + col2 + "&emsp;" + col3 + "&emsp;" + col4 + "<br/>"
+        }
+        document.getElementById("out").innerHTML = output;
+    </script>
+</body>
+</html>

@@ -1,9 +1,9 @@
-body {background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);}
+body {background: rgb(255, 0, 111);
+background: radial-gradient(circle, rgb(180, 0, 252)0%, rgb(6, 170, 247) 100%);}
 
 button {
     color: white;
-    background: rgb(194, 104, 202);
+    background: rgb(111, 104, 202);
     font-size: 14px;
     padding: 10px;
     border: 1px solid rgb(0, 0, 0);
@@ -12,5 +12,10 @@ button {
     width: 20%;
     height:5%;
 }
+
+body {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      color:rgb(0, 0, 0);
+    }
 
 
