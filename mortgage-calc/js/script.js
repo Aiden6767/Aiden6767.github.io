@@ -7,7 +7,7 @@ function mortgage() {
   var m = monthlypaymentamount();
   var n = 12();
 
-  var loan_balance = calculate_balance(B)(monthly_payment(m), interest_rate (r)/ 12, term_remaining(n) * 12)}
+  var loan_balance = remainingloanbalance(monthlypaymentamount, interestrate / 12,remainingloanbalance * 12)}
 
   alert ("remaining" + loan_balance);
      
