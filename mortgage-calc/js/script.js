@@ -22,8 +22,7 @@ function calculate_balance(PMT, IR, NP) {
      "Annual interest rate:\t" + interest_rate * 100 + "%\n" +
      "Term remaining:\t" + term_remaining + " years\n\n" +
      "Remaining balance:\t$" + loan_balance)
-     return loan_balance 
-
+     
      
 
  
