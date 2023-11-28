@@ -15,9 +15,9 @@ MortgageLoanBalance = TotalLoan - MonthlyPayment;
 if (MortgageLoanBalance > 0 ) {
     document.write("Your " + NumOfYears + " year mortgage amount is " + MonthlyPayment + " per month." );
 
-    document.write(TotalInterestAmount);
-    document.write(TotalLoan);
-    document.write(MortgageLoanBalance);
+    document.writeln(TotalInterestAmount);
+    document.writeln(TotalLoan);
+    document.writeln(MortgageLoanBalance);
 
     for (i = 0; i <= MonthlyPayment; i++) {
         document.write("Month " + i + ": Your Monthly Payment " + MonthlyPayment + " and Mortgage loan balance " + MortgageLoanBalance + "<br>");
