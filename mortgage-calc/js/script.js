@@ -23,7 +23,7 @@ function calculate_balance(PMT, IR, NP) {
      "Term remaining:\t" + term_remaining + " years\n\n" +
      "Remaining balance:\t$" + loan_balance)
 
-     document.getElementById("out").innerHTML = msg;
+     
 
  
 
