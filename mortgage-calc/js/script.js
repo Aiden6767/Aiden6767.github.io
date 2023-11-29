@@ -9,7 +9,7 @@ function mortgage() {
 
   var remainingloanbalance = remainingloanbalance(monthlypaymentamount, interestrate / 12,remainingloanbalance * 12)}
 
-  alert ("remaining" + loan_balance);
+  alert ("remaining" + remainingloanbalance);
      
      
 
