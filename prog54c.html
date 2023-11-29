@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="rad">Radius:</label>
+    <input type="number" id="rad" name="rad" placeholder="0" required>
+
+    <button onclick="calc()">Calculate</button>
+    <button onclick="reset()">Reset</button>
+    <p id="out" style="background: skyblue; padding: 15px;"></p>
+
+    <script>
+        function reset() {
+            document.getElementById("out").innerHTML = "";
+            document.getElementById("rad").value = "";
+        }
+
+        function getArea() {
+            return Math.PI * radius**2;
+            //for circle
+
+        }
+
+        function getCircumference(radius) {
+            return 2 * Math.PI * radius;
+        }
+
+        function calc() {
+            var rad = Number(document.getElementById("rad").value);
+            //call get area(rad) and get circumference(rad) and put in variables
+        }
+    </script>
+
+</body>
+</html>

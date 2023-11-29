@@ -1,18 +1,7 @@
-var output = "";
-
-function mortgage() {
-  var b = remainingloanbalance();
-  var p = principal();
-  var r = interestrate();
-  var m = monthlypaymentamount();
-  var n = 12();
-
-  var remainingloanbalance = remainingloanbalance(monthlypaymentamount, interestrate / 12,remainingloanbalance * 12)}
-
-  console.log ("remaining" + remainingloanbalance);
-     
-     
-
- 
-
-
+function reset() {
+  document.getElementById("prin").value = "";
+  document.getElementById("int").value = "";
+  document.getElementById("noy").innerHTML = "";
+  document.getElementById("monp").innerHTML = "";
+  document.getElementById("out").innerHTML = "";
+}

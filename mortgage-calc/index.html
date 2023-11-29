@@ -7,31 +7,27 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="js/script.js" rel="js/script.js">
 </head>
-<body> 
+<body>
     <p id="out"></p>
     <label for="principal">Principal:</label>
-    <input type="int" min="0">
+    <input type="number" id="prin" placeholder="0" min="0" required>
     <br/><br/>
 
     <label for="intrate">Interest Rate as %(e.g. 7.9):</label>
-    <input type="double" min="0">
+    <input type="number" id="int" placeholder="0" min="0" required>
     <br/><br/>
 
     <label for="noy">Number of Years:</label>
-    <input type="int" min="0">
+    <input type="number" id="noy" placeholder="0" min="0" required>
     <br/><br/>
 
     <label for="monpay">Monthly Payment:</label>
-    <input type="int" min="0">
+    <input type="number" id="monp" placeholder="0" min="0" required>
     <br/><br/>
 
 
-     <button onclick="calculate">Calculate</button>
-     <button onclick="reset">Reset</button>
-     
-    
-    
-
+     <button onclick="calc()">Calculate</button>
+     <button onclick="reset()">Reset</button>
 
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog 52a with functions</title>
+</head>
+<body>
+    <label for="len">Length:</label>
+    <input type="number" id="len" name="len" placeholder="0" required>
+
+    <label for="len">Width:</label>
+    <input type="number" id="wid" name="wid" placeholder="0" required>
+
+    <button onclick="calc()">Calculate</button>
+    <button onclick="reset()">Reset</button>
+    <p id="out" style="background: skyblue; padding: 15px;"></p>
+
+    <script>
+        //put in java script
+        function reset() {
+            document.getElementById("len").value = "";
+            document.getElementById("wid").value = "";
+            document.getElementById("out").innerHTML = "";
+            //(always needs id)
+        }
+
+        function getArea(length, width) {
+            var area = length * width;
+            return area;
+            //return length * width; = same thing
+        }
+
+        function getPerim(length, width) {
+            return 2 * length + 2 * width;
+            //var perim = 2 * length + 2 * width;
+            //return perim;
+        }
+
+        function calc() {
+            var len = Number(document.getElementById("len").value);
+            var wid = Number(document.getElementById("wid").value);
+            var area = getArea(len, wid);
+            var perim = getPerim(len, wid);
+            document.getElementById("out").innerHTML =
+            "Area: " + area + "<br/>Perimeter: " + perim;
+        }
+    </script>
+</body>
+</html>
