@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch calculator</title>
+</head>
+<body>
+    <input type="number" id="n1" name="n1">
+    <select id="operand" name="operand">
+        <option disabled selected value>--select an option--</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="n2" name="n2">
+    <p id="output"></p>
+    <button onclick="run()">Calculate</button>
+
+    <script>
+        function run() {
+            var num1 = Number(document.getElementById("n1").value);
+            var num2 = Number(document.getElementById("n2").value);
+            var op = document.getElementById("operand").value;
+            var result = 0;
+
+            switch (op) {
+                    case "+":
+                    result = num1 + num2
+                    break;
+                    case "-":
+                    result = num1 - num2
+                    break;
+                    case "*":
+                    result = num1 * num2
+                    break;
+                    case "/":
+                    result = num1 / num2
+                    break;
+                default:
+                    document.getElementById("output").innerText =
+                        "Invalid option selected!";
+                    return; //exit function instantly
+            }
+            document.getElementById("output").innerText =
+            num1 + " " + op + " " + num2 + " = " + result;
+        }
+    </script>
+</body>
+</html>
