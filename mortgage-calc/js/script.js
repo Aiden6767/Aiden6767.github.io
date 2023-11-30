@@ -3,6 +3,7 @@ function reset() {
   document.getElementById("int").value = "";
   document.getElementById("noy").innerHTML = "";
   document.getElementById("monp").innerHTML = "";
+  document.getElementById("nom").innerHTML = "";
   document.getElementById("out").innerHTML = "";
 }
 function getRemainder() {
