@@ -16,7 +16,7 @@ function calc() {
   var remainder = principal (1 + int/12)**12,noy; - monp [(1 + int/12)**12,noy - 1] / (1 + int/12);
   document.getElementById("out").innerHTML = "Remainder: " + remainder + "<br/>interestrate: " + int;
 }
-var n = 12;
+var nom = 12;
 var monp = m;
 var noy = t;
 var int = r;
