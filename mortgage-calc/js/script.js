@@ -14,7 +14,9 @@ function calc() {
   var remainder = Number(document.getElementById("rem").value);
   var principal = Number(document.getElementById("prin").value);
   var interestrate = Number(document.getElementById("int").value);
-  var remainder = principal * (1 + int/12)**12,noy; - monp * (1 + int/12)**12 * noy - 1 / (1 + int/12);
+ var top = principal * (1 + int/12)**12
+ var mid = noy - monp * (1 + int/12)**12
+ var bottom = noy - 1 / (1 + int/12);
   document.getElementById("out").innerHTML = "Remainder: " + remainder + "<br/>interestrate: " + int;
 }
 var nom = 12;
