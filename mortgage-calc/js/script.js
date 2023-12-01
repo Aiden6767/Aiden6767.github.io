@@ -12,6 +12,6 @@ function calc() {
   var O = 12;
   var B = (p*(1 + (r/12))**(12*t)) - ((m*((1 + (r/12))**(12*t)-1))/(r/12));
   var out = document.getElementById("out");
-  out.innerText="$" + b.toFixed(2);
+  out.innerText="$" + B.toFixed(2);
 }
 
