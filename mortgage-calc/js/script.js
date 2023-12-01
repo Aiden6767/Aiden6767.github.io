@@ -6,18 +6,17 @@ function reset() {
   document.getElementById("monp").value = "";
   document.getElementById("out").innerHTML = "";
 }
-function getRemainder() {
-  var b = p (1 + r/12)**12 / t - m (1 + r/12)**12 / t - 1 / (1 + r/12);
-
-}
 function calc() {
-  var remainder = Number(document.getElementById("rem").value);
-  var principal = Number(document.getElementById("prin").value);
-  var interestrate = Number(document.getElementById("int").value);
-  var b = p * (1 + r/12)**12 / t - m * (1 + r/12)**12 / t - 1 / (1 + r/12);
-  document.getElementById("out").innerHTML = "Remainder: " + remainder + "<br/>interestrate: " + r;
+  var r = Number(document.getElementById("rem").value);
+  var p = Number(document.getElementById("prin").value);
+  var t = Number(document.getElementById("int").value);
+  var t = Number(document.getElementById("int").value);
+  var n = 12;
+  var b = (p*(1 + (r/12))**(12*t)) - ((m*((1 + (r/12))**(12*t)-1))/(r/12));
+  var out = document.getElementById("out");
+  out.innerText="$" + b.toFixed(2);
 }
-var nom = 12;
+var n = 12;
 var monp = m;
 var noy = t;
 var int = r;
