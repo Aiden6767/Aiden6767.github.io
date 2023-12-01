@@ -1,17 +1,7 @@
 body {background: rgb(255, 0, 111);
 background: radial-gradient(circle, rgb(180, 0, 252)0%, rgb(6, 170, 247) 100%);}
 
-button {
-    color: white;
-    background: rgb(111, 104, 202);
-    font-size: 14px;
-    padding: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    text-align: center;
-    width: 20%;
-    height:5%;
-}
+
 
 body {
       font-family:Verdana, Geneva, Tahoma, sans-serif;

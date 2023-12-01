@@ -1,9 +1,9 @@
 function reset() {
   document.getElementById("12").value = "";
-  document.getElementById("m").value = "";
-  document.getElementById("t").value = "";
-  document.getElementById("p").value = "";
-  document.getElementById("b").value = "";
+  document.getElementById("prin").value = "";
+  document.getElementById("int").value = "";
+  document.getElementById("noy").value = "";
+  document.getElementById("monp").value = "";
   document.getElementById("out").innerHTML = "";
 }
 function getRemainder() {
