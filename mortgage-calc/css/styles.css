@@ -1,0 +1,14 @@
+body {
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(218,68,219,1) 100%);
+
+color: black;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color:rgb(255, 0, 157)
+}
