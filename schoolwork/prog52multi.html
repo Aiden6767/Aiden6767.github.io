@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog 52a with Multi-Return functions</title>
+</head>
+<body>
+    <script>
+        function getAreaAndPerim(length, width) {
+            var area = length * width;
+            var perim = 2 * length + 2 * width
+            return [area,perim];
+        }
+
+        // Make random numbers between [1, 10] (as integers) vvv
+        var num1 = Math.round(Math.random() * 10) + 1;
+        var num2 = Math.round(Math.random() * 10) + 1;
+        var AandP = getAreaAndPerim(num1, num2);
+        var area = AandP[0];
+        var perim = AandP[1];
+        document.writeln("Length: " + num1 + "<br/>")
+        document.writeln("Width: " + num2 + "<br/>")
+        document.writeln("Area: " + area + "<br/>")
+        document.writeln("Perim: " + perim + "<br/>")
+
+    </script>
+</body>
+</html>
