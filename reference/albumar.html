@@ -11,11 +11,11 @@
     <script>
         // Predefine variables
         var gap = 10;
-var cirNum = 40;
-var cirSize = 20;
+var cirNum = 15;
+var cirSize = 6;
 var angle = 0;
-var ptNum = 100;
-var rectSize = 600;
+var ptNum = 35;
+var rectSize = 250;
 
         // Initialize the program
         function setup() {
@@ -49,21 +49,21 @@ var rectSize = 600;
             translate(width/2, height-90);
             noStroke();
             textFont('Arial');
-            textSize(10);
-            textAlign(CENTER, CENTER);
+            textSize(15);
+            textAlign(RIGHT, RIGHT);
             text("Album Title Here", 0, 0);
-            textSize(8);
-            text("This is a demo", 0, 10);
+            textSize(10);
+            text("This is a demo", 0, 15);
             pop();
 
 
             push();
             translate(width/2, height/2);
             noFill();
-            stroke('white');
+            stroke('aqua');
             strokeWeight('2');
             rectMode(CENTER);
-            rect(0, 0, rectSize, rectSize);
+            rect(0, 10, rectSize, rectSize);
 
 
 
