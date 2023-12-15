@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQ Notes</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <style>
+        body { background-color: black;
+        color:white;
+    text-align: center;}
+    </style>
+</head>
+<body>
+    <p id="test1">This is a paragraph</p>
+    <p id="test2">Another paragraph</p>
+    <p>Input field
+        <input type="text" id="test3" value="placeholder"></p>
+        <button id="btn1">set text</button>
+        <button id="btn2">set html</button>
+        <button id="btn3">set value</button>
+        <button id="btn4">append text</button>
+
+        <p id="gtest">Heres some <b>bold</b> text in a paragraph</p>
+        <button id="gbtn1">show text</button>
+        <button id="gbtn2">set html</button>
+
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <button id="lbtn">append list item</button>
+
+        <div style="background: rgb(0, 140, 255); width: 100px; height: 100px; position: absolute;"></div>
+        <button id="abtn">run animation</button>
+
+        <script>
+            $(document).ready(function(){
+                //all jq code
+                $("#btn1").click(function(){
+                    $("#test1").text("hello, world");
+                });
+                $("#btn2").click(function(){
+                    $("#test2").html("<b>Hello, world</b>");
+                });
+                $("#btn3").click(function(){
+                    $("#test3").val("abc123");
+                });
+
+                $("#gbtn1").click(function(){
+                    alert("Text: " + $("#gtest").text());
+                });
+                $("#gbtn1").click(function(){
+                    alert("HTML: " + $("#gtest").html());
+                });
+
+                $("#btn4").click(function(){
+                    $("p").append(" <b>Appended Text</b>");
+                });
+                $("#lbtn").click(function(){
+                    $("ol").append("<li>Appended item</li>");
+                });
+
+                $("#abtn").click(function(){
+                    $("div").animate({left: '250px'});
+                    $("div").fadeOut(500); //mill seconds
+                });
+            });
+        </script>
+
+</body>
+</html>
