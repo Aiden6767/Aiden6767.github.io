@@ -3,6 +3,7 @@
         "abtn",
         "gbtn",
         "gtest",
-        "lbtn"
+        "lbtn",
+        "xhttp"
     ]
 }
