@@ -10,10 +10,19 @@
     <script src="js/script.js"></script>
 </head>
 <body style="background: rgb(0, 0, 0);">
-    <h1>Aiden Bruhn</h1>
-
-    <p id="abt">My name is Aiden Bruhn, I am a student for craig highschool currently in my freshman year.
-        I have been going to 
-    </p>
+    <h1 id="hd">Aiden Bruhn</h1>
+    <h2>Central Time:</h2>
+    <h1 id="clock">00:00:00</h1>
+<dialog id="modal">
+    <button onclick ="document.getElementById('modal').close();">Close About Information</button>
+    <p>My name is Aiden Bruhn, I am a student for craig highschool currently in my freshman year.
+        I have been going to craig for about 4 months now and I find it interesting. On the side I am
+        on my way to getting my license so I am able to at least have a little freedom. I enjoy playing
+        football and on my free time I normally either go for a run or play video games. I also enjoy
+        editing youtube videos and sometimes I get paid for it.</p>
+</dialog>
+<button onclick ="
+    document.getElementById('modal').showModal();
+        ">Open About Information</button>
 </body>
 </html>
