@@ -15,8 +15,8 @@
 }
 
 .static {background: rgb(255, 0, 242);}
-.bg1::after { background: url("purple22.jpg"); }
-.bg2::after { background: url("purple33.jpg"); }
+.bg1::after { background: url("file1.jpg"); }
+.bg2::after { background: url("file1.jpg"); }
 
 .parallax::after {
     content: " ";
