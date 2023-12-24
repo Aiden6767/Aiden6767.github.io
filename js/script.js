@@ -9,3 +9,21 @@ function updateTime() {
     document.getElementById("hex").innerHTML = clr;
 }
 setInterval(updateTime, 1000);
+
+$("h2").each(function(index, element){
+    var animation = TweenMax.to(this, 0.2, {
+      className: '+= superShadow',
+      marginTop: '-10px',
+      marginBottom: '10px',
+      ease: Power1.easeIn,
+      paused:true
+    });
+    element.animation = animation;
+  })
+  
+  
+  $('h2').hover(function(){
+   this.animation.play()
+  }, function(){
+   this.animation.reverse();
+  })
