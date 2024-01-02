@@ -20,8 +20,8 @@ $("h2").each(function(index, element){
     });
     element.animation = animation;
   })
-  
-  
+
+
   $('h2').hover(function(){
    this.animation.play()
   }, function(){

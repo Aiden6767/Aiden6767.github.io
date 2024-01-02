@@ -52,11 +52,11 @@ a {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 600vw;
-    height: 600vh;
+    width: 800vw;
+    height: 800vh;
     color: #fff;
-    background: linear-gradient(-45deg, #ffffff, #f3d880, #ffffff, #f3d880);
-    background-size: 700% 700%;
+    background: linear-gradient(45deg, #ffffff, #f3d880, #ffee00, #f3d880);
+    background-size: 1000% 1000%;
     animation: Gradient 15s ease infinite;
 }
 @keyframes Gradient {
@@ -72,7 +72,7 @@ a {
 }
  @media only screen and (max-width: 400px) {
      input, select{
-         width: 120px;
+         width: 500px;
      }
  }
 
@@ -81,7 +81,7 @@ a {
     background: #becccc;
     color: #fff;
     text-align: center;
-    padding:50px;
+    padding:-100px;
   }
 
 
