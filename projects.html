@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <style>
+        p {color: rgb(255, 95, 0);}
+        p{font-weight: bold;}
+        p{font-size: x-large;}
+        #gradient {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 900vw;
+    height: 600vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #e4b311, #f3d880, #ffee00, #f3d880);
+    background-size: 700% 700%;
+    animation: Gradient 15s ease infinite;
+}
+@keyframes Gradient {
+    0% {
+        background-position: 50% 100%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 50% 100%
+    }
+}
+ @media only screen and (max-width: 400px) {
+     input, select{
+         width: 120px;
+     }
+ }
+ a {
+    color:rgb(255, 95, 0);
+ }
+ h1 {
+    color:rgb(255, 95, 0);
+    font-family: fantasy;
+ }
+    </style>
 </head>
 <body>
+<h1>Portfolio</h1>
+<hr/>
+<a href="pseudoclasses.html">Project 1</a>
+<p>In this project, I was told to make a page with 3 links and 3 images with a highlighted background.
+    I completed that and I used pink as the background highlights.
+</p>
+<hr/>
+<a href="whatcolorisit.html">Project 2</a>
+<p>
+    In this project, I was told to make a clock with background rgb lighting based off of the time of the day.
+</p>
+<hr/>
+<a href="modals.html">Project 3</a>
 
+<p>
+    In this project, I was told to make a button that releases text onto the page with a colored background.
+</p>
+<div id="gradient"></div>
+    <div id="page">
 </body>
 </html>

@@ -59,29 +59,17 @@ a {
     background-size: 1000% 1000%;
     animation: Gradient 15s ease infinite;
 }
-@keyframes Gradient {
-    0% {
-        background-position: 50% 100%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 50% 100%
-    }
-}
- @media only screen and (max-width: 400px) {
-     input, select{
-         width: 500px;
-     }
- }
+
 
  body {
     font-family:fantasy;
     background: #becccc;
     color: #fff;
     text-align: center;
-    padding:-100px;
+    padding:-200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -93,3 +81,26 @@ a {
   strong{
     font-size:150px;
   }
+  .container {
+    border: 2px solid #333;
+  }
+.color {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    margin: 0 1px;
+    cursor: pointer;
+    border: 2px solid #FFF;
+}
+.clr1 {
+    background-color: #9B0FDB;
+}
+.clr2 {
+    background-color: #00ff0d;
+}
+.clr3 {
+    background-color: #00e1ff;
+}
+.clr4 {
+    background-color: #3336eb;
+}
