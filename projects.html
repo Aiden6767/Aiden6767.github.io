@@ -8,29 +8,8 @@
         p {color: rgb(255, 95, 0);}
         p{font-weight: bold;}
         p{font-size: x-large;}
-        #gradient {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 900vw;
-    height: 600vh;
-    color: #fff;
-    background: linear-gradient(-45deg, #e4b311, #f3d880, #ffee00, #f3d880);
-    background-size: 700% 700%;
-    animation: Gradient 15s ease infinite;
-}
-@keyframes Gradient {
-    0% {
-        background-position: 50% 100%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 50% 100%
-    }
-}
+    
+
  @media only screen and (max-width: 400px) {
      input, select{
          width: 120px;
@@ -43,10 +22,56 @@
     color:rgb(255, 95, 0);
     font-family: fantasy;
  }
+ .container {
+    border: 2px solid #333;
+  }
+.color {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    margin: 0 1px;
+    cursor: pointer;
+    border: 2px solid #FFF;
+}
+.clr1 {
+    background-color: #9B0FDB;
+}
+.clr2 {
+    background-color: #00ff0d;
+}
+.clr3 {
+    background-color: #00e1ff;
+}
+.clr4 {
+    background-color: #ff0000;
+}
+.clr5 {
+    background-color: #fffb00;
+}
+.clr6 {
+    background-color: #00ff95;
+}
+.clr7 {
+    background-color: #ffffff;
+}
+.clr8 {
+    background-color: #000000;
+}
     </style>
 </head>
 <body>
 <h1>Portfolio</h1>
+<h1>Change Background:</h1>
+<div class="container">
+    <span id='1' onclick="color(this)" class='color clr1'></span>
+    <span id='2' onclick="color(this)" class='color clr2'></span>
+    <span onclick="color(this)" class='color clr3'></span>
+    <span onclick="color(this)" class='color clr4'></span>
+    <span onclick="color(this)" class='color clr5'></span>
+    <span onclick="color(this)" class='color clr6'></span>
+    <span onclick="color(this)" class='color clr7'></span>
+    <span onclick="color(this)" class='color clr8'></span>
+</div>
 <hr/>
 <a href="pseudoclasses.html">Project 1</a>
 <p>In this project, I was told to make a page with 3 links and 3 images with a highlighted background.
@@ -63,7 +88,13 @@
 <p>
     In this project, I was told to make a button that releases text onto the page with a colored background.
 </p>
-<div id="gradient"></div>
     <div id="page">
+        <script>
+            function color(z) {
+    var a = getComputedStyle(z);
+    var b = a.backgroundColor;
+    document.getElementsByTagName("BODY")[0].style.backgroundColor=b;
+  }
+        </script>
 </body>
 </html>
