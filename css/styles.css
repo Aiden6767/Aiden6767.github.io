@@ -116,3 +116,24 @@ a {
 .clr8 {
     background-color: #000000;
 }
+.slider{
+	margin:50px auto;
+	width:50%;
+}
+.img-box img{
+	width:100%;
+}
+
+.btn{
+	border:none;
+	outline:none;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;
+}
+
+.btn:hover{
+	background: #111;
+}

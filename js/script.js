@@ -9,7 +9,6 @@ function updateTime() {
     document.getElementById("hex").innerHTML = clr;
 }
 setInterval(updateTime, 1000);
-
 $("h2").each(function(index, element){
     var animation = TweenMax.to(this, 0.2, {
       className: '+= superShadow',
@@ -20,16 +19,29 @@ $("h2").each(function(index, element){
     });
     element.animation = animation;
   })
-
-
   $('h2').hover(function(){
    this.animation.play()
   }, function(){
    this.animation.reverse();
   })
-
   function color(z) {
     var a = getComputedStyle(z);
     var b = a.backgroundColor;
     document.getElementsByTagName("BODY")[0].style.backgroundColor=b;
   }
+  var slider_img = document.querySelector('.slider-img');
+var images = ['jordan1.jpg', 'jordan2.jpg', 'jordan3.jpg'];
+var i = 0;
+function prev(){
+	if(i <= 0) i = images.length;
+	i--;
+	return setImg();
+}
+function next(){
+	if(i >= images.length-1) i = -1;
+	i++;
+	return setImg();
+}
+function setImg(){
+	return slider_img.setAttribute('src', "images/"+images[i]);
+}
