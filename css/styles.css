@@ -127,13 +127,14 @@ a {
 .btn{
 	border:none;
 	outline:none;
+	background:#888;
 	padding:10px 30px;
 	font-size: 20px;
 	color:#ddd;
-	cursor: pointer;
+	cursor: circle;
 	margin:10px auto;
 }
 
 .btn:hover{
-	background: #111;
+	background: rgb(255, 94, 0);
 }

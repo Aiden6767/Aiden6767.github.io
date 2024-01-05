@@ -5,7 +5,7 @@ function updateTime() {
     var h = ("0" + date.getHours()).slice(-2);
     var clr = "#" + h + m + s;
     document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
-    document.getElementById("bdy").style.backgroundColor = clr;
+    document.getElementById("bdy").styles.backgroundColor = clr;
     document.getElementById("hex").innerHTML = clr;
 }
 setInterval(updateTime, 1000);
@@ -29,19 +29,23 @@ $("h2").each(function(index, element){
     var b = a.backgroundColor;
     document.getElementsByTagName("BODY")[0].style.backgroundColor=b;
   }
-  var slider_img = document.querySelector('.slider-img');
-var images = ['jordan1.jpg', 'jordan2.jpg', 'jordan3.jpg'];
+var slider_img = document.querySelector('.slider-img');
+var images = ['jordan1.jpg', 'jordan2.jpg', 'jordan3.jpg', 'jordan4.jpg', 'jordan5.jpg'];
 var i = 0;
+
 function prev(){
 	if(i <= 0) i = images.length;
 	i--;
 	return setImg();
 }
+
 function next(){
-	if(i >= images.length-1) i = -1;
+	if(i >= images.length -1) i = -1;
 	i++;
 	return setImg();
 }
+
 function setImg(){
-	return slider_img.setAttribute('src', "images/"+images[i]);
+	return slider-img.setAttribute('src', "image/"+images[i]);
+
 }
