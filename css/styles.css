@@ -46,6 +46,7 @@ input {
 a {
     color:rgb(255, 94, 0);
     font-family: fantasy;
+    font-size: x-large;
 }
 #gradient {
     z-index: -1;
